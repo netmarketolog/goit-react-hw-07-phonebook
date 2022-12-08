@@ -1,11 +1,10 @@
-import React from 'react';
-import ContactForm from 'components/ContactForm/ContactForm';
-import { ContactList } from 'components/ContactList/ContactList';
-import Filter from 'components/Filter/Filter';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from 'redux/operations';
 import { selectError, selectIsLoading } from 'redux/selectors';
+import ContactForm from 'components/ContactForm/ContactForm';
+import { ContactList } from 'components/ContactList/ContactList';
+import Filter from 'components/Filter/Filter';
 
 import { Container } from './PhoneBook.styled';
 
